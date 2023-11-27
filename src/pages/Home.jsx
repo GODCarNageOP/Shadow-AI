@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/cloud.png";
+import "regenerator-runtime/runtime";
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
