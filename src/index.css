@@ -7,9 +7,6 @@
   padding: 0;
 }
 
-.bg{
-  background-image: url("../src/assets/igris.jpg");
-  background-repeat: no-repeat;
-  background-size:cover ;
-  z-index: -10;
+.bg-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
 }
