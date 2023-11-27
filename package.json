@@ -14,7 +14,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
-    "react-speech-kit": "^3.0.1",
     "react-speech-recognition": "^3.10.0",
     "react-tsparticles": "^2.12.2",
     "tsparticles": "^2.12.0",
