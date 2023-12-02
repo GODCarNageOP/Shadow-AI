@@ -26,3 +26,8 @@
 .task > ::-webkit-scrollbar-thumb {
   @apply bg-sky-500 rounded-xl;
 }
+
+.home{
+  background: rgb(55,56,255);
+background: linear-gradient(90deg, rgba(55,56,255,1) 0%, rgba(6,153,255,1) 50%, rgba(55,56,255,1) 100%);
+}
