@@ -2,6 +2,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Shadow from "./Shadow";
 import Tasks from "./pages/Tasks";
+import GoogleCalendar from "./pages/GoogleCalendar";
 
 function App() {
 
@@ -26,6 +27,10 @@ function App() {
         {
           path: "/tasks",
           element: <Tasks />,
+        },
+        {
+          path: "/calendar",
+          element: <GoogleCalendar />,
         },
       ],
     },

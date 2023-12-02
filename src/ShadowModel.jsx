@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "./Loader";
 
 const ShadowCanvas = () => {
-  const shadow = useGLTF("./astraia/scene.gltf");
+  const shadow = useGLTF("./michi_bot/scene.gltf");
 
   return (
     <mesh>
@@ -19,7 +19,7 @@ const ShadowCanvas = () => {
         shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
-    <primitive object={shadow.scene} scale={3} position-y={-1.1} rotation-y={0} />
+    <primitive object={shadow.scene} scale={10} position-y={-1.1} rotation-y={0} />
     </mesh>
   );
 };

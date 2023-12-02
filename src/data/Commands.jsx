@@ -7,6 +7,10 @@ const contacts = [
     name: "arunendra",
     number: "9372594793",
   },
+  {
+    name: "darshan",
+    number: "9130659146"
+  }
 ];
 
 export const commands = [
@@ -46,11 +50,27 @@ export const commands = [
   },
 
   {
-    command: "find *",
+    command: "find location *",
     callback: (location) => {
       window.open(
         "https://www.google.com/maps/search/" + encodeURIComponent(location)
       );
+    },
+  },
+
+  {
+    command: "find my location",
+    callback: () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((position) => {
+          const { latitude, longitude } = position.coords;
+          window.open(`https://www.google.com/maps/place/${latitude},${longitude}`);
+        }, (error) => {
+          console.error("Error getting location:", error.message);
+        });
+      } else {
+        console.error("Geolocation is not supported by your browser");
+      }
     },
   },
 
