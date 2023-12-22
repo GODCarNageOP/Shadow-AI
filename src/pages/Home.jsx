@@ -6,7 +6,6 @@ import SpeechRecognition, {
 } from "react-speech-recognition";
 import { commands } from "../data/Commands";
 import { useSpeechSynthesis } from 'react-speech-kit';
-import ShadowModel from "../ShadowModel";
 
 const Home = () => {
 
@@ -56,7 +55,7 @@ useEffect(()=> {
           src={logo}
           alt=""
           className="h-80 w-80"
-          onClick={SpeechRecognition.startListening}
+          onClick={SpeechRecognition.startListening({continuous: true})}
         />
       </div>
     </div>

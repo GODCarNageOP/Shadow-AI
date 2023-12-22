@@ -113,5 +113,15 @@ export const commands = [
         console.log(`Contact not found for ${name}`);
       }
     },
-  }
+  },
+
+  // OPEN COMMANDS
+
+  {
+    command: "tell me a joke",
+    callback: () => {
+      window.open("https://www.reddit.com/r/Jokes/");
+      // You can replace the URL with a joke API or a website containing jokes.
+    },
+  },
 ];
